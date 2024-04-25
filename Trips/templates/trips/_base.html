@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Trip Track Project</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
@@ -19,9 +20,9 @@
                     <a href="{% url 'trip-create' %}">
                         <li class="py-2 px-3 md:px-0 hover:bg-gray-600 hover:cursor-pointer">New Trip +</li>
                     </a>
-{#                    <a href="{% url 'note-list' %}">#}
+                    <a href="{% url 'note-list' %}">
                         <li class="py-2 px-3 md:px-0 hover:bg-gray-600 hover:cursor-pointer">My Notes</li>
-{#                    </a>#}
+                    </a>
 {#                    <a href="{% url 'note-create' %}">#}
                     <li class="py-2 px-3 md:px-0 hover:bg-gray-600 hover:cursor-pointer">New Note +</li>
 {#                    </a>#}
@@ -37,6 +38,7 @@
             </div>
         </div>
         <div class="w-full md:w-full p-10 overflow-auto">
+
             {% block content %}
             {% endblock content %}
         </div>
